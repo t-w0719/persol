@@ -94,7 +94,8 @@ class Commands
     
     commands[:end] = Command.new(name: 'おわり', voice: "はい、おわりですね。", kill_child: true)    
     commands[:shutoff] = Command.new(name: '消えろ', voice: "はい、消えろですね。何もしません。")    
-    commands[:init] = Command.new(name: '留吉', voice: 'へい、親方', sub_commands: Commands.new(commands.values))
+#    commands[:init] = Command.new(name: '留吉', voice: 'へい、親方', sub_commands: Commands.new(commands.values))
+    commands[:init] = Command.new(name: 'パーソルくん', voice: 'ご清聴ありがとうございました', sub_commands: Commands.new(commands.values))
     cmds = Commands.new
     cmds << commands[:init]
   end
